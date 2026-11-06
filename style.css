@@ -489,10 +489,8 @@ STEPS ↓
 }
 
 .steps__description {
-  display: flex;
-  flex-direction: column;
-  margin-left: 24px;
-  max-width: 320px;
+  padding: 32px o;
+  padding-left: 64px;
 }
 
 .steps__grid {
