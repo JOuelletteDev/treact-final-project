@@ -480,22 +480,31 @@ STEPS ↓
 
 .steps__img {
   z-index: 2;
+  width: 100%;
 }
 
-#steps .row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.step__description {
+  margin-left: 24px;
 }
 
 .steps__description {
-  padding: 32px o;
+  padding: 32px 0;
   padding-left: 64px;
 }
 
 .steps__grid {
+  transform: translateX(-50%) translateY(50%) scale(1) scaleY(1);
+  width: 80px;
+  height: 80px;
   position: absolute;
-  left: 50%;
+  right: 0px;
+  left: 0;
+  bottom: 0px;
+  fill: rgb(100, 21, 255);
+  --tw-text-opacity: 1;
+  color: rgba(100, 21, 255, var(--tw-text-opacity));
+  z-index: 0;
+  display: block;
 }
 
 .step__number {
