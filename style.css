@@ -850,6 +850,17 @@ PRICING ↓
   padding-bottom: 2rem;
 }
 
+.plans__blob {
+  z-index: -10;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: translateX(-50%) translateY(50%) scaleX(1) scaleY(1);
+  height: 256px;
+  width: 256px;
+  opacity: 0.25;
+}
+
 /* PLAN BUSINESS */
 
 .plan:nth-child(2) {
@@ -899,9 +910,12 @@ PRICING ↓
 }
 
 .plan__button:hover {
-  transform: translate(1px -1px);
-  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px rgba(0, 0, 0, 0) 0px 0px 0px 0px
-    rgba(0, 0, 0, 0.1) 0px 20px 25px -5px rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  transform: translate(1px, -1px);
+  box-shadow:
+    rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
 
 /* 
@@ -912,6 +926,116 @@ TESTIMONIALS ↓
 
 #testimonials .row {
   display: flex;
+}
+
+.testimonials__img {
+  width: 40%;
+}
+
+.testimonials__description {
+  width: calc(100% - 40%);
+  display: flex;
+  flex-direction: column;
+  padding-left: 64px;
+}
+
+#testimonials .section__title {
+  margin-bottom: 24px;
+  line-height: 1.25;
+}
+
+.testimonial {
+  margin-top: 40px;
+}
+
+.testimonial__title {
+  color: #4a5568;
+  line-height: 1.625;
+  margin-top: 1rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.fas {
+  font-weight: 900;
+  font-family: "Font Awesome 6 Free";
+  -webkit-font-smoothing: antialiased;
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-rendering: auto;
+}
+
+.fa-star {
+  --fa: "\f005";
+  color: rgb(246 173 85);
+}
+
+.testimonial__para {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  font-weight: 500;
+  line-height: 1.625;
+  font-size: 16px;
+  color: rgb(74 85 104);
+}
+
+.testimonial__bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.testimonial__profile {
+  display: flex;
+  align-items: center;
+}
+
+.testimonial__img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.testimonial__name {
+  color: #4a5568;
+  line-height: 1.625;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.testimonial__role {
+  color: #7c8ba1;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.testimonial__details {
+  margin-left: 24px;
+}
+
+.testimonial__buttons {
+  display: flex;
+  align-items: center;
+}
+
+.testimonial__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  background: #edf2f7;
+  border-radius: 50%;
+  margin: 0 12px;
+  transition: all 300ms ease;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+svg:not(:root) {
+  overflow-clip-margin: content-box;
 }
 
 /* 
