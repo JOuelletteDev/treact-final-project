@@ -1077,6 +1077,16 @@ START / CALL TO ACTION ↓
   overflow: hidden;
 }
 
+.start__row {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .start__container {
   padding: 96px 0;
   width: 100%;
@@ -1100,8 +1110,8 @@ START / CALL TO ACTION ↓
 
 .start__blob--2 {
   position: absolute;
-  bottom: 0px;
-  left: 0px;
+  top: 0px;
+  right: 0px;
   height: 20rem;
   width: 20rem;
   transform: translate(5rem, -16rem);
@@ -1125,6 +1135,7 @@ START / CALL TO ACTION ↓
   font-weight: 700;
   line-height: 1.5;
   z-index: 2;
+  width: 50%;
 }
 
 .start__buttons {
