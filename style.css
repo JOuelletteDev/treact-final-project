@@ -101,6 +101,11 @@ img {
   cursor: pointer;
 }
 
+.nav__link:hover::after,
+.footer__link:hover::after {
+  width: 100%;
+}
+
 .nav__link--primary:hover {
   background-color: rgba(80, 17, 204);
   color: white;
@@ -123,7 +128,8 @@ img {
   margin: 0 24px;
 }
 
-.nav__link::after {
+.nav__link::after,
+.footer__link::after {
   content: "";
   position: absolute;
   left: 0;
