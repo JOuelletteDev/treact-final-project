@@ -98,11 +98,16 @@ img {
   border: none;
   width: auto;
   transition: all 300ms ease;
+  cursor: pointer;
 }
 
 .nav__link--primary:hover {
-  background-color: rgba(80, 17, 204, 0.8);
+  background-color: rgba(80, 17, 204);
   color: white;
+}
+
+.login {
+  margin-left: 48px;
 }
 
 .nav__link {
@@ -118,9 +123,24 @@ img {
   margin: 0 24px;
 }
 
+.nav__link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  height: 2px;
+  width: 100%;
+  background: #6415ff;
+  transition: all 300ms ease;
+  opacity: 0;
+}
+
 a {
   display: inline;
   text-decoration: none;
+}
+
+a {
 }
 
 .btn__menu {
@@ -261,6 +281,10 @@ p {
   transition: all 300ms ease;
 }
 
+.header__email--btn:hover {
+  background-color: rgba(60, 13, 153);
+}
+
 button {
   cursor: pointer;
 }
@@ -356,6 +380,11 @@ FEATURES ↓
   border-radius: 500px;
 }
 
+.feature__text {
+  margin-top: 8px;
+  margin-left: 16px;
+}
+
 h2 {
   display: block;
   font-size: 1.5em;
@@ -379,6 +408,10 @@ QUALITY WORK ↓
   align-items: center;
 }
 
+#quality .section__tag {
+  text-align: left;
+}
+
 .section__tag {
   font-size: 16px;
   color: #6415ff;
@@ -389,6 +422,7 @@ QUALITY WORK ↓
 
 #quality .section__title {
   line-height: 1.25;
+  text-align: left;
 }
 
 .section__title {
@@ -402,6 +436,10 @@ QUALITY WORK ↓
 
 #quality .btn {
   margin-top: 32px;
+}
+
+.btn:hover {
+  background-color: rgba(80, 17, 204);
 }
 
 .btn {
@@ -1272,6 +1310,13 @@ a {
   font-weight: 900;
   margin-left: 8px;
   letter-spacing: 0.05em;
+}
+
+.footer__divider {
+  width: 100%;
+  height: 2px;
+  margin: 64px 0;
+  background: rgb(116, 44, 255);
 }
 
 .footer__bottom {
