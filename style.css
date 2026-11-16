@@ -527,7 +527,6 @@ STEPS ↓
   margin-top: 12px;
   font-weight: 500;
   line-height: 2;
-  width: 50%;
 }
 
 .steps__img {
@@ -1545,10 +1544,20 @@ MOBILE RESPONSIVENESS ↓
     align-items: center;
   }
 
-  #step .section__tag,
-  #step .section__title,
-  #step .section__para {
+  #steps .section__tag,
+  #steps .section__title,
+  #steps .section__para {
     text-align: center;
+  }
+
+  .steps__description {
+    width: 100%;
+    padding: 32px;
+  }
+
+  .step__para {
+    width: 100%;
+    max-width: 300px;
   }
 
   .quality__description,
