@@ -1406,7 +1406,7 @@ MOBILE RESPONSIVENESS ↓
 
 */
 
-/* SMALL LAPTOPS */
+/* SMALL LAPTOPS 1280px & < */
 
 @media (max-width: 1280px) {
   header .row {
@@ -1423,7 +1423,7 @@ MOBILE RESPONSIVENESS ↓
   }
 }
 
-/* DESKTOPS & LARGE TABLETS */
+/* DESKTOPS & LARGE TABLETS 1024px & < */
 
 @media (max-width: 1024px) {
   header .row {
@@ -1515,7 +1515,7 @@ MOBILE RESPONSIVENESS ↓
   }
 }
 
-/* SMALL TABLETS */
+/* SMALL TABLETS  768px & < */
 
 @media (max-width: 768px) {
   #quality .row,
@@ -1683,7 +1683,7 @@ MOBILE RESPONSIVENESS ↓
   }
 }
 
-/* IPHONE SE */
+/* IPHONE SE  64px & < */
 
 @media (max-width: 640px) {
   .container {
