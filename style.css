@@ -1400,14 +1400,11 @@ a {
   width: 16px;
 }
 
-.
-
 /* 
 
 MOBILE RESPONSIVENESS ↓
 
 */
-
 
 /* SMALL LAPTOPS */
 
@@ -1656,11 +1653,10 @@ MOBILE RESPONSIVENESS ↓
   #testimonials .section__tag {
     margin-top: 40px;
   }
-  .testimonials .section__title {
+  #testimonials .section__title {
     max-width: 350px;
     margin-left: auto;
     margin-right: auto;
-    text-align: center;
   }
   #testimonials .section__tag,
   #testimonials .section__title,
